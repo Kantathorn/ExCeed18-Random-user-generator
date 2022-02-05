@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.user-list {
+    padding: 2rem; /*ระยะขอบนอก*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem; /*ระยะระหว่าง card*/
+}
+
+.card {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    height: 120px;
+    border-bottom: 1px solid #eeee;
+    background-color: rgb(109, 125, 196);
+}
+
+.card-body {
+    text-align: center;
+    padding: 0 1rem 1rem; /*บน ขวา ล่าง ซ้าย หรือ บน ซ้าย-ขวา ล่าง*/ 
+}
+
+.card-body img{
+    background-color: rgb(200, 209, 243);
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+.username {
+    margin: 0.75rem 0;
+}
+
+.email {
+    margin-bottom: 0.5rem;
+}
+
+.employment {
+    color: gray;
+    font-size: small;
+}
